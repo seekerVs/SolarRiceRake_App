@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "169613047561",
+    "project_id": "fir-auth-e169c",
+    "storage_bucket": "fir-auth-e169c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169613047561:android:24d23618e86158125c85d8",
+        "android_client_info": {
+          "package_name": "com.google.firebase.quickstart.auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169613047561-nom7h0uk9ig49kahsqtmk76i9qihra3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5b498eUElSD4RUYlHg-LRDMYCkZzg2uI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169613047561-nom7h0uk9ig49kahsqtmk76i9qihra3o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169613047561:android:b91723b101850b575c85d8",
+        "android_client_info": {
+          "package_name": "net.techcn.solarricerakeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169613047561-nom7h0uk9ig49kahsqtmk76i9qihra3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5b498eUElSD4RUYlHg-LRDMYCkZzg2uI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169613047561-nom7h0uk9ig49kahsqtmk76i9qihra3o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

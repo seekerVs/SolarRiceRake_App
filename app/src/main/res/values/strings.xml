@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SolarRice App</string>
+    <string name="solarricerake">SolarRice</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Sheesh fragment</string>
+    <string name="devices">Bluetooth Devices</string>
+    <string name="bluetooth_permission_title">Bluetooth permission</string>
+    <string name="bluetooth_permission_grant">Bluetooth permission is required by this App. Please grant in next dialog.</string>
+    <string name="bluetooth_permission_denied">Bluetooth permission was permanently denied. You have to enable permission \"%s\" in App settings.</string>
+    <string name="client_id">169613047561-nom7h0uk9ig49kahsqtmk76i9qihra3o.apps.googleusercontent.com</string>
+    <string name="connection_status">Disconnected</string>
+</resources>

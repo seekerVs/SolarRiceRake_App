@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DashboardFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            
+            <LinearLayout
+                android:id="@+id/headerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@drawable/dashboard_header_bg"
+                android:layout_marginBottom="10dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="bottom">
+
+                    <ImageView
+                        android:id="@+id/conditionImageview"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/ic_launcher_foreground"
+                        android:contentDescription="User Icon" />
+
+                    <TextView
+                        android:id="@+id/conditionTextview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="N/A"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="2dp">
+                        
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/fluent_temperature_20_regular"/>
+
+                        <TextView
+                            android:id="@+id/tempTextview2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="N/A"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ph_wind"
+                            android:layout_marginEnd="2dp"
+                            android:contentDescription="Wind Icon"/>
+
+                        <TextView
+                            android:id="@+id/windSpeedTextview2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="N/A"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"/>
+                        
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/fluent_location_20_regular"
+                            android:layout_marginEnd="2dp"
+                            android:contentDescription="Wind Icon"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Daet, Camarines Norte"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        app:cardElevation="5dp"
+                        android:radius="20dp"
+                        android:layout_marginEnd="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/condition_photo"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:gravity="bottom">
+
+                            <TextView
+                                android:id="@+id/conditionTextview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="N/A"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Condition"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        app:cardElevation="5dp"
+                        android:radius="20dp"
+                        android:layout_marginEnd="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/temperature_photo"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:gravity="bottom">
+
+                            <TextView
+                                android:id="@+id/tempTextview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="N/A"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Temperature"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        app:cardElevation="5dp"
+                        android:radius="20dp"
+                        android:layout_marginEnd="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/feels_like_photo"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:gravity="bottom">
+
+                            <TextView
+                                android:id="@+id/feelsLikeTextview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="N/A"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Feels Like"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        app:cardElevation="5dp"
+                        android:radius="20dp"
+                        android:layout_marginEnd="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/humidity_photo"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:gravity="bottom">
+
+                            <TextView
+                                android:id="@+id/humidityTextview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="N/A"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Humidity"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        app:cardElevation="5dp"
+                        android:radius="20dp"
+                        android:layout_marginEnd="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/wind_speed_photo"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:gravity="bottom">
+
+                            <TextView
+                                android:id="@+id/windSpeedTextview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="N/A"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Wind Speed"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        app:cardElevation="5dp"
+                        android:radius="20dp"
+                        android:layout_marginEnd="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/cloudyness_photo"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:gravity="bottom">
+
+                            <TextView
+                                android:id="@+id/cloudnessTextview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="N/A"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Cloudiness"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        app:cardElevation="5dp"
+                        android:radius="20dp"
+                        android:layout_marginEnd="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/pressure_photo"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:gravity="bottom">
+
+                            <TextView
+                                android:id="@+id/pressureTextview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="N/A"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pressure"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/BatteryLayout"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:elevation="5dp"
+                    android:background="@drawable/edgedbg"
+                    android:padding="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/batteryicon"
+                        android:contentDescription="Battery Icon"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".8"
+                        android:text="Battery"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/BatteryTextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="N/A"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/PowerLayout"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:elevation="5dp"
+                    android:background="@drawable/edgedbg"
+                    android:padding="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/powericon"
+                        android:contentDescription="Power Icon"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".8"
+                        android:text="Power"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/PowerTextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="N/A"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/ModeLayout"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:elevation="5dp"
+                    android:background="@drawable/edgedbg"
+                    android:padding="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fluent_plug_connected_16_filled"
+                        android:contentDescription="Battery Icon"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".8"
+                        android:text="Mode"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/modeTextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="N/A"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/progress_layout"
+        android:background="@color/grey">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/CircularDeterminateProgressBar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:indeterminateOnly="false"
+                android:progress="0"
+                android:progressDrawable="@drawable/circle_progressbar"
+                android:rotation="-90"
+                tools:progress="0" />
+
+            <TextView
+                android:id="@+id/progressTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading..."
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_gravity="top"
+        android:gravity="end"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/wifiImageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fluent_wifi_2_24_filled"
+            android:contentDescription="WiFi Icon"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="5dp"/>
+
+        <ImageView
+            android:id="@+id/bluetoothImageView"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/fluent_bluetooth_24_filled"
+            android:layout_gravity="center"
+            android:contentDescription="Bluetooth Icon" />
+
+        <ImageButton
+            android:id="@+id/notificationImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fluent_alert_24_filled"
+            android:contentDescription="Notification Icon"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+</FrameLayout>
