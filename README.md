@@ -52,14 +52,6 @@
   </tr>
   <tr>
     <td>
-      <img src="https://raw.githubusercontent.com/seekerVs/SolarRiceRake_App/main/demo%20images/462570009_9082795685141196_4049465715204608446_n.jpg" alt="Image">
-    </td>
-    <td>
-      <img src="https://raw.githubusercontent.com/seekerVs/SolarRiceRake_App/main/demo%20images/905e5b6a-a46c-4c14-aaa2-e532404f76d1.jpg" alt="Image">
-    </td>
-  </tr>
-  <tr>
-    <td>
       <img src="https://raw.githubusercontent.com/seekerVs/SolarRiceRake_App/main/demo%20images/9e71e9ca-80e5-4f1b-9c12-fedc010adf0e.jpg" alt="Image">
     </td>
     <td>
@@ -72,6 +64,11 @@
     </td>
     <td>
       <img src="https://raw.githubusercontent.com/seekerVs/SolarRiceRake_App/main/demo%20images/a457dac2-e23e-4a1f-b1b3-a8e26dbc1ffb.jpg" alt="Image">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://raw.githubusercontent.com/seekerVs/SolarRiceRake_App/main/demo%20images/462570009_9082795685141196_4049465715204608446_n.jpg" alt="Image">
     </td>
   </tr>
 </table>
