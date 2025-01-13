@@ -5,7 +5,7 @@
   </tr>
 </table>
 
-### App UI Designer  
+### UI Designer  
 <table>
   <tr>
     <td><a href="https://github.com/EvidJamito">EvidJamito</a></td>
